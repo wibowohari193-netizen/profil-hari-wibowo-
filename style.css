@@ -1,0 +1,197 @@
+:root {
+  --bg: #FFFFFF;
+  --surface: #FAFAF9;
+  --ink: #14161A;
+  --ink-muted: #6A6E77;
+  --line: #ECECEA;
+  --yellow: #FFC831;
+  --coral: #FF6F59;
+  --blue: #3E7BFA;
+  --green: #23A66A;
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+/* ---------- Loader ---------- */
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--bg);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+#loader.hide { opacity: 0; visibility: hidden; }
+.loader-name { font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; margin: 0; }
+.loader-underline {
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--yellow);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: fill 1s ease forwards;
+}
+@keyframes fill { to { transform: scaleX(1); } }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 20px 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; }
+.site-header nav { display: flex; gap: 26px; flex-wrap: wrap; }
+.nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+.nav-link:hover { color: var(--ink); }
+.nav-link.is-active { color: var(--ink); border-bottom-color: var(--yellow); }
+
+/* ---------- Layout ---------- */
+main { max-width: 720px; margin: 0 auto; padding: 0 6vw; }
+.panel { padding: 72px 0; border-bottom: 1px solid var(--line); }
+footer.panel { border-bottom: none; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; margin: 0 0 28px; }
+
+/* ---------- Hero ---------- */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--yellow);
+  margin-bottom: 24px;
+}
+.eyebrow { color: var(--ink-muted); font-weight: 500; margin: 0 0 6px; }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.05;
+}
+.role { font-size: 1.2rem; font-weight: 600; margin: 0 0 22px; }
+.highlight {
+  background: linear-gradient(to top, var(--yellow) 40%, transparent 40%);
+  padding: 0 2px;
+}
+.hero-caption { max-width: 55ch; color: var(--ink-muted); font-size: 1.03rem; margin: 0 0 30px; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+}
+.btn-primary { background: var(--ink); color: #fff; }
+.btn-primary:hover { background: #2A2D33; }
+.btn-secondary { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+.btn-secondary:hover { border-color: var(--ink); }
+
+/* ---------- Skill ---------- */
+.chip-list { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; }
+.chip { font-size: 0.95rem; font-weight: 600; padding: 12px 20px; border-radius: 12px; }
+.chip-yellow { background: #FFC83122; color: #8A6200; }
+.chip-coral  { background: #FF6F5922; color: #C4402C; }
+.chip-blue   { background: #3E7BFA22; color: #1E4FB8; }
+.chip-green  { background: #23A66A22; color: #157A4C; }
+
+/* ---------- Karya ---------- */
+.project-grid { display: flex; flex-direction: column; gap: 16px; }
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--ink);
+  border-radius: 12px;
+  padding: 26px 28px;
+}
+.border-yellow { border-left-color: var(--yellow); }
+.border-coral { border-left-color: var(--coral); }
+.project-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin: 0 0 8px; }
+.project-card p { margin: 0 0 16px; color: var(--ink-muted); }
+.tag-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; padding: 0; }
+.tag-list li { font-size: 0.78rem; font-weight: 500; color: var(--ink-muted); background: #EFEFEC; padding: 4px 10px; border-radius: 100px; }
+.project-link { font-size: 0.92rem; font-weight: 600; color: var(--ink); text-decoration: underline; text-decoration-color: var(--yellow); text-underline-offset: 3px; }
+
+/* ---------- Kontak ---------- */
+.kontak-caption { max-width: 50ch; color: var(--ink-muted); margin: -16px 0 28px; }
+.kontak-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.kontak-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--ink);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.kontak-card:hover { transform: translateY(-3px); }
+.kontak-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--yellow);
+  color: var(--ink);
+}
+.kontak-icon svg { width: 20px; height: 20px; }
+.kontak-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.kontak-label { font-size: 0.72rem; color: rgba(255,255,255,0.65); }
+.kontak-value { font-size: 0.95rem; font-weight: 600; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kontak-card-outline { background: var(--surface); }
+.kontak-card-outline .kontak-icon { background: #FFF4D9; color: #8A6200; }
+.kontak-card-outline .kontak-label { color: var(--ink-muted); }
+.kontak-card-outline .kontak-value { color: var(--ink); }
+
+/* ---------- Focus ---------- */
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .site-header { padding: 16px 5vw; flex-direction: column; align-items: flex-start; }
+  .panel { padding: 52px 0; }
+  .kontak-buttons { grid-template-columns: 1fr; }
+}
