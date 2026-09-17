@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hari Wibowo — Junior Web Developer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div id="loader">
@@ -18,85 +21,475 @@
 
   <header class="site-header">
     <span class="brand">Hari Wibowo</span>
+
     <nav aria-label="Navigasi utama">
       <a href="#tentang" class="nav-link is-active">Profil</a>
-      <a href="#skill" class="nav-link">Keahlian</a>
-      <a href="#karya" class="nav-link">Proyek</a>
+      <a href="#pendidikan" class="nav-link">Pendidikan</a>
+      <a href="#pengalaman" class="nav-link">Pengalaman</a>
+      <a href="#sertifikasi" class="nav-link">Sertifikasi</a>
+      <a href="#artikel" class="nav-link">Artikel & Blog</a>
       <a href="#kontak" class="nav-link">Kontak</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- PROFIL -->
     <section id="tentang" class="panel hero">
+
       <img src="foto-hari.png" alt="Foto Hari Wibowo" class="profile-photo">
+
       <p class="eyebrow">Halo, saya</p>
+
       <h1>Hari Wibowo</h1>
-      <p class="role"><span class="highlight">Junior Web Developer</span></p>
-      <p class="hero-caption">Saya senang membangun antarmuka yang rapi, cepat, dan enak dipakai — dari layout sampai detail interaksi kecil.</p>
+
+      <p class="sekolah">SMK Negeri 1 Jenangan</p>
+
+      <p class="domisili">📍 Ponorogo, Jawa Timur</p>
+
+      <p class="role">
+        <span class="highlight">Junior Web Developer</span>
+      </p>
+
+      <p class="hero-caption">
+        Saya senang membangun antarmuka yang rapi, cepat, dan enak dipakai — dari layout sampai detail interaksi kecil.
+      </p>
+
       <div class="hero-buttons">
-        <a href="cv-hari-wibowo.pdf" class="btn btn-primary" target="_blank" rel="noopener">Lihat CV</a>
-        <a href="#karya" class="btn btn-secondary">Lihat Proyek</a>
+        <a href="cv-hari-wibowo.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+          Lihat CV
+        </a>
+
+        <a href="#karya" class="btn btn-secondary">
+          Lihat Proyek
+        </a>
       </div>
+
     </section>
 
+
+    <!-- KEAHLIAN -->
     <section id="skill" class="panel">
+
       <h2>Keahlian</h2>
+
       <ul class="chip-list">
         <li class="chip chip-yellow">HTML</li>
         <li class="chip chip-coral">CSS</li>
         <li class="chip chip-blue">JavaScript</li>
         <li class="chip chip-green">PHP dasar</li>
       </ul>
+
     </section>
 
-    <section id="karya" class="panel">
-      <h2>Proyek</h2>
-      <div class="project-grid">
-        <article class="project-card border-yellow">
-          <h3>Website Profil (situs ini)</h3>
-          <p>Dibangun dari nol dengan HTML, CSS, dan JavaScript murni — tanpa framework.</p>
-          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        </article>
-        <article class="project-card border-coral">
-          <h3> Toko Baju</h3>
-          <p>Website usaha kecil dengan katalog produk dan halaman kontak.</p>
-          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>PHP</li></ul>
-          <a href="http://tokoserkom.fwh.is/index.php" class="project-link" target="_blank" rel="noopener">Kunjungi toko</a>
-        </article>
+
+    <!-- TENTANG SAYA -->
+    <section id="tentang-saya" class="panel">
+
+      <h2>Tentang Saya</h2>
+
+      <div class="tentang-saya-box">
+
+        <p>
+          Saya adalah seorang siswa SMK yang tertarik di bidang web development.
+          Saya senang belajar hal-hal baru seputar pembuatan website, mulai dari
+          tampilan hingga cara kerjanya di balik layar.
+        </p>
+
+        <p>
+          Saat ini saya sedang mengembangkan kemampuan di HTML, CSS, JavaScript,
+          dan PHP dasar untuk membangun website yang rapi, cepat, dan mudah digunakan.
+        </p>
+
       </div>
+
     </section>
+
+
+   <!-- PENDIDIKAN -->
+<section id="pendidikan" class="panel">
+
+  <div class="section-heading">
+    <p class="section-kicker">Riwayat</p>
+    <h2>Pendidikan</h2>
+  </div>
+
+  <div class="timeline">
+
+    <!-- SD -->
+    <article class="timeline-card border-blue">
+
+      <span class="timeline-date">2015 - 2021</span>
+
+      <h3>SD Ainul Ulum</h3>
+
+      <p>
+        Menempuh pendidikan dasar di SD Ainul Ulum
+        dan menyelesaikan pendidikan pada tahun 2021.
+      </p>
+
+    </article>
+
+
+    <!-- SMP -->
+    <article class="timeline-card border-yellow">
+
+      <span class="timeline-date">2021 - 2024</span>
+
+      <h3>SMPN 1 Pulung</h3>
+
+      <p>
+        Menempuh pendidikan menengah pertama di SMPN 1 Pulung
+        hingga tahun 2024.
+      </p>
+
+    </article>
+
+
+    <!-- SMK -->
+    <article class="timeline-card border-coral">
+
+      <span class="timeline-date">2024 - 2027</span>
+
+      <h3>SMK Negeri 1 Jenangan</h3>
+
+      <p>
+        Menempuh pendidikan kejuruan di SMK Negeri 1 Jenangan
+        dengan mengembangkan kemampuan di bidang web development,
+        desain antarmuka, serta pemrograman dasar.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman" class="panel">
+
+      <div class="section-heading">
+        <p class="section-kicker">Perjalanan</p>
+        <h2>Pengalaman</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- PENGALAMAN PROYEK -->
+        <article class="timeline-card border-yellow">
+
+          <span class="timeline-date">Pengembangan Web</span>
+
+          <h3>Proyek Website Pribadi & Usaha</h3>
+
+          <p>
+            Mengerjakan website profil dan website usaha dengan HTML, CSS,
+            JavaScript, serta PHP dasar, mulai dari perancangan tampilan
+            sampai implementasi.
+          </p>
+
+          <ul class="tag-list">
+            <li>Web Development</li>
+            <li>UI</li>
+            <li>PHP</li>
+          </ul>
+
+        </article>
+
+
+        <!-- DOKUMENTASI -->
+        <article class="timeline-card border-coral">
+
+          <span class="timeline-date">Dokumentasi</span>
+
+          <h3>Dokumentasi Kegiatan</h3>
+
+          <p>
+            Kumpulan dokumentasi kegiatan.
+          </p>
+
+
+          <!-- FOTO DOKUMENTASI -->
+          <div class="documentation-grid">
+
+            <div class="documentation-item">
+
+              <img
+                src="dokumentasi1.jpg"
+                alt="Dokumentasi Proses Proyek"
+              >
+
+              <strong>Kunjungan Industri Di GameLab Salatiga</strong>
+
+              
+
+            </div>
+
+
+            <div class="documentation-item">
+
+              <img
+                src="dokumentasi2.jpg"
+                alt="Dokumentasi Kegiatan"
+              >
+
+              <strong>Trofi GameLab </strong>
+
+              
+
+            </div>
+
+
+            <div class="documentation-item">
+
+              <img
+                src="dokumentasi3.jpg"
+                alt="Dokumentasi Hasil"
+              >
+
+              <strong>Gedung GameLab</strong>
+
+              
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SERTIFIKASI -->
+    <section id="sertifikasi" class="panel">
+
+      <div class="section-heading">
+        <p class="section-kicker">Bukti kompetensi</p>
+        <h2>Sertifikasi</h2>
+      </div>
+
+      <div class="certificate-card">
+
+        <div class="certificate-icon">✓</div>
+
+        <div>
+
+          <h3>Sertifikasi & Pelatihan</h3>
+
+          <p>
+            Tempat untuk menampilkan sertifikat, kursus, pelatihan,
+            atau bukti kompetensi yang telah diselesaikan.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIKEL -->
+    <section id="artikel" class="panel">
+
+      <div class="section-heading">
+        <p class="section-kicker">Tulisan</p>
+        <h2>Artikel & Blog</h2>
+      </div>
+
+      <div class="article-grid">
+
+        <article class="article-card">
+
+          <span class="article-label">Web Development</span>
+
+          <h3>Belajar Membangun Website dari Dasar</h3>
+
+          <p>
+            Catatan proses belajar HTML, CSS, JavaScript,
+            dan PHP dasar dalam membangun website.
+          </p>
+
+          <a href="#" class="project-link">
+            Baca artikel
+          </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+          <span class="article-label">Catatan</span>
+
+          <h3>Perjalanan Mengembangkan Proyek Web</h3>
+
+          <p>
+            Dokumentasi singkat tentang proses, tantangan,
+            dan hal baru yang dipelajari selama mengerjakan proyek.
+          </p>
+
+          <a href="#" class="project-link">
+            Baca artikel
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROYEK -->
+    <section id="karya" class="panel">
+
+      <h2>Proyek</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card border-yellow">
+
+          <h3>Website Profil (situs ini)</h3>
+
+          <p>
+            Dibangun dari nol dengan HTML, CSS, dan JavaScript
+            murni — tanpa framework.
+          </p>
+
+          <ul class="tag-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+        </article>
+
+
+        <article class="project-card border-coral">
+
+          <h3>Masbow Handmade</h3>
+
+          <p>
+            Website usaha kecil dengan katalog produk
+            dan halaman kontak.
+          </p>
+
+          <ul class="tag-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+          </ul>
+
+          <a href="../toko/index.php" class="project-link">
+            Kunjungi toko
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
   </main>
 
+
+  <!-- KONTAK -->
   <footer id="kontak" class="panel kontak">
+
     <h2>Mari terhubung</h2>
-    <p class="kontak-caption">Terbuka untuk kerja sama, magang, atau sekadar diskusi soal proyek web.</p>
+
+    <p class="kontak-caption">
+      Terbuka untuk kerja sama, magang, atau sekadar diskusi soal proyek web.
+    </p>
+
     <div class="kontak-buttons">
-      <a href="mailto:hariwibowo@email.com" class="kontak-card">
+
+      <!-- EMAIL -->
+      <a href="mailto:hariwibowo193@email.com" class="kontak-card">
+
         <span class="kontak-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/>
-            <path d="M4 6.5 12 13l8-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <path
+              d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+
+            <path
+              d="M4 6.5 12 13l8-6.5"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
           </svg>
+
         </span>
+
         <span class="kontak-text">
+
           <span class="kontak-label">Email</span>
-          <span class="kontak-value">wibowohari193@email.com</span>
+
+          <span class="kontak-value">
+            hariwibowo193@email.com
+          </span>
+
         </span>
+
       </a>
-      <a href="tel:+6281234567890" class="kontak-card kontak-card-outline">
+
+
+      <!-- TELEPON -->
+      <a
+        href="tel:+62-881-0276-32040"
+        class="kontak-card kontak-card-outline"
+      >
+
         <span class="kontak-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.24-.24.6-.32.9-.2 1 .34 2.1.52 3.2.52.55 0 1 .45 1 1V19.5c0 .55-.45 1-1 1C10.6 20.5 3.5 13.4 3.5 4.7c0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.1.18 2.2.52 3.2.11.3.04.65-.2.9L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+
+            <path
+              d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.24-.24.6-.32.9-.2 1 .34 2.1.52 3.2.52.55 0 1 .45 1 1V19.5c0 .55-.45 1-1 1C10.6 20.5 3.5 13.4 3.5 4.7c0-.55.45-1 1-1H8c.55 0 1 .45 1 1 0 1.1.18 2.2.52 3.2.11.3.04.65-.2.9L6.6 10.8Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linejoin="round"
+            />
+
           </svg>
+
         </span>
+
         <span class="kontak-text">
+
           <span class="kontak-label">Telepon</span>
-          <span class="kontak-value">+62 812 3456 7890</span>
+
+          <span class="kontak-value">
+            +62-881-0276-32040
+          </span>
+
         </span>
+
       </a>
+
     </div>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
